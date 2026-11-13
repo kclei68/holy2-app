@@ -233,4 +233,6 @@ def main(page: ft.Page):
     load_records()
     page.add(form_view, list_view)
 
-ft.app(target=main)
+# 防止在 Android 環境中因為找不到 ft.app 導致崩潰
+if hasattr(ft, "app"):
+    ft.app(target=main)
