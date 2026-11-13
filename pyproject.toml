@@ -1,0 +1,11 @@
+[project]
+name = "holy-communion-app"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = [
+    "flet"
+]
+
+[tool.flet]
+product = "聖體登記"
+org = "com.holycommunion.app"
